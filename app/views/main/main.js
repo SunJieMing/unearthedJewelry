@@ -4,7 +4,7 @@ angular.module('unearthedApp')
   $stateProvider
   .state('main', {
     url: '/',
-    templateUrl: '/main/main.html', //I'm not sure if it should be this or app/views/main/main.html
+    templateUrl: '/views/main/main.html', //I'm not sure if it should be this or app/views/main/main.html
     controller: 'MainCtrl'
   });
 });

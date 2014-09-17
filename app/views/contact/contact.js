@@ -4,7 +4,7 @@ angular.module('unearthedApp')
   $stateProvider
   .state('contact', {
     url: '/contact',
-    templateUrl: '/contact/contact.html',
+    templateUrl: '/views/contact/contact.html',
     controller: 'ContactCtrl'
   });
 });

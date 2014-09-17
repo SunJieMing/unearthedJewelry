@@ -4,7 +4,7 @@ angular.module('unearthedApp')
   $stateProvider
   .state('about', {
     url: '/about',
-    templateUrl: '/about/about.html',
+    templateUrl: '/views/about/about.html',
     controller: 'AboutCtrl'
   });
 });

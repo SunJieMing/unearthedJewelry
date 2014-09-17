@@ -3,8 +3,8 @@ angular.module('unearthedApp')
 .config(function($stateProvider) {
   $stateProvider
   .state('product', {
-    url: '/:product',
-    templateUrl: '/product/product.html',
+    url: '/product',
+    templateUrl: '/views/product/product.html',
     controller: 'ProductCtrl'
   });
 });
