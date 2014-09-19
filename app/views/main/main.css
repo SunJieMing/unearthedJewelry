@@ -2,8 +2,17 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
-
+h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
 .navbar {
   background-color: rgba(0,0,0,.6);
   border: none;
@@ -19,8 +28,9 @@ nav h1 {
   padding: 0px;
 }
 
-.main-carousel1 {
+#main-carousel1 {
   width: 100%;
+  height: 650px;
 }
 #main-header-left {
   display: inline-block;
@@ -38,14 +48,30 @@ nav h1 {
   margin: auto;
   text-align: center;
   height: 60px;
+
+
 }
 #main-header-center li {
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 17px;
   display: inline-block;
   margin-left: 30px;
   margin-right: 30px;
   font-size: 20px;
+}
+#main-header-center a {
+  color: white;
+  text-decoration: none;
+}
+#main-header-center a:hover { 
+  color: #b2b2b2;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+  text-decoration: none;
 }
 #main-header-right {
   display: inline-block;
@@ -57,13 +83,13 @@ nav h1 {
 }
 .main-info-box1 {
   background-color: rgba(0,0,0,.6);
-  height: 450px;
+  height: 400px;
   width: 400px;
   float: left;
   position: absolute;
   top: 100px;
   left: 14%;
-  z-index: 100;
+  z-index: 5;
 }
 .main-info-box1 h1 {
   font-size: 30px;
@@ -71,15 +97,18 @@ nav h1 {
   text-align: center;
 }
 .main-info-box1 p {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
 }
 .main-info-box1 hr {
   width: 60%;
 }
 #carousel1 {
   position: relative;
+  height: 650px;
  }
 .carousel2 {
   
@@ -91,31 +120,48 @@ nav h1 {
 .main-row-one {
   height: 350px;
   width: 100%;
-  background-color: blue;
+  
 }
 .row-one-left {
-  background-color: #CCC;
+  position: relative;
+  display: inline-block;
+  background: #adadad; /* Old browsers */
+  background: -moz-linear-gradient(top,  #adadad 0%, #f7f7f7 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#adadad), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #adadad 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #adadad 0%,#f7f7f7 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #adadad 0%,#f7f7f7 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #adadad 0%,#f7f7f7 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adadad', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
   height: 100%;
-  width: 35%;
+  width: 40%;
+  padding: 0px;
+  margin: 0px;
 }
 .row-one-left h1 {
  text-align: center;
- padding-top: 30px;
+ padding-top: 50px;
  margin-top: 0px;
+ font-weight: 900;
 }
 .row-one-left p {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0;
 }
 .row-one-right {
+  display: inline-block;
   height: 100%;
-  width: 65%;
-}
+  width: 60%;
+  /*background-color: yellow;*/
+  background-image: url('/images/toprow.png');
+  padding: 0px;
+  margin-top: 0;
 
+}
 .main-row-two {
   height: 350px;
   width: 100%;
-
 }
 .row-two-left {
   height: 100%;
@@ -124,6 +170,7 @@ nav h1 {
   background-color: cornflowerblue;
   margin: 0;
   padding: 0;
+  background-image: url('/images/bellfinal.png');
 }
 .row-two-center {
   height: 100%;
@@ -132,25 +179,55 @@ nav h1 {
   background-color: orange;
   margin: 0;
   padding: 0;
+  background-image: url('/images/handfinal.png');
 }
 .row-two-right {
+  position: relative;
   height: 100%;
   width: 40%;
-  background-color: #1f1f1f;
   display: inline-block;
   margin: 0;
   padding: 0;
+  background-color: blue;
+  background: #1e1e1e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e1e1e 0%, #5e5e5e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e1e1e), color-stop(100%,#5e5e5e));*/ /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* IE10+ */
+  background: linear-gradient(to bottom,  #1e1e1e 0%,#5e5e5e 100%);*/ /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#5e5e5e',GradientType=0 );*/ /* IE6-9 */
 }
+.row-two-right h1 {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.row-two-right p {
 
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-/*.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
-
+  color: white;
+  padding-left: 70px;
+  padding-right: 60px;
+}
+.text-div1 {
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  z-index: 5;
+}
+.text-div2 {
+  height: 100%;
+  width: 100%;
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  z-index: 5;
+  color: white;
+}
 
 #main-footer-left {
   display: inline-block;
@@ -158,9 +235,9 @@ nav h1 {
   color: black;
   float: left;
   text-align: center;
-  height: 60px;
+  height: 120px;
   font-size: 10px;
-  padding-top: 10px;
+  padding-top: 32px;
 }
 #main-footer-left p {
   margin-bottom: 2px;
@@ -171,10 +248,10 @@ nav h1 {
   color: black;
   margin: auto;
   text-align: center;
-  height: 60px;
+  height: 120px;
+  padding-top: 18px;
 }
 #main-footer-center li {
-  text-decoration: none;
   display: inline;
   margin-left: 30px;
   margin-right: 30px;
@@ -186,10 +263,10 @@ nav h1 {
   color: black;
   float: right;
   text-align: center;
-  height: 60px;
+  height: 120px;
   font-size: 10px;
+  padding-top: 27px;
 }
-
 
 /* Custom page header */
 .header {
