@@ -3,77 +3,145 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.my-container {
+  background: url('/images/product-bg.jpg');
+  background-size: 100%;
+  background-repeat: none;
+}
+.product-container {
+  background-color: #111111;
+  height: 900px;
+  width: 65%;
+  margin: auto;
+  margin-top: 0px;
+}
+.product-container h1 {
+  color: white;
+  text-align: center;
+  font-weight: 900;
+}
+.product-container h2 {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+.product-container h3 {
+  color: white;
+}
+.product-container p {
+  color: white;
+}
+.product-container li {
+  color: white;
+  list-style-type: none;
+}
+.product-title {
+  padding-top: 100px;
+  margin-top: 0px;
+}
+.product-info {
+  margin-top: 50px;
+  padding-right: 40px;
+  float: right;
+}
+.product-images {
+  float: left;
+  width: 70%;
+  height: 600px;
+  padding: 0px;
+  margin: 0px;
+}
+.thumbnails li {
+  margin: auto;
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+}
+.thumbnails ul {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.product-image {
+  height: 300px;
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+.thumbnail-1 {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.thumbnail-2 {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.thumbnail-3 {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.thumbnail-4 {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.price {
+  text-align: center;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
+
+
+
 
 /* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+
+.product-footer {
+  background-color: #111111;
+  font-color: white;
+}
+.product-footer p {
+  color: white;
+
+}
+footer h1 {
+  font-size: 50px;
+  display: inline-block
+}
+footer a{
+  color: #b2b2b2;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+  text-decoration: none;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
