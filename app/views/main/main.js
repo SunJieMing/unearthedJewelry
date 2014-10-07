@@ -20,32 +20,3 @@ angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
 
     }
 }]);
-
-$(document).ready(function() {
-	console.log("This is the document.ready function")
-	
-	$('.mobile-nav').click(function() {
-		console.log("I am clicking!!!");
-	});
-
-     // $('.menu-btn').click(function(){
-	    //  $('.responsive-menu').addClass('expand')
-	    //  $('.menu-btn').addClass('btn-none')
-	    //  console.log("This is the click-open function")
-     // })
-     
-     // $('.close-btn').click(function(){
-	    //  $('.responsive-menu').removeClass('expand')
-	    //  $('.menu-btn').removeClass('btn-none')
-	    //  console.log("This is the click-close function")
-     // })
-   
-   
-	
-     // $('.menu-btn').click(function(){
-     // 	$('.responsive-menu').toggleClass('expand')
-     // 	console.log("You are clicking the Menu Button");
-     // })
-   
-
-});
