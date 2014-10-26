@@ -42,15 +42,33 @@
       <!-- ******* End Mobile Nav ******* -->
 </nav>
 
-<div id="myCarousel" class="carousel slide">
+<!-- Test Carousel -->
+
+<div ng-controller="CarouselDemoCtrl">
+  <div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="main-info-box1">
+          <h1>{{slide.title}}</h1>
+          <hr>
+          <p>{{slide.description}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+
+<!-- End Test -->
+<!-- <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+  </ol> -->
 
   <!-- Carousel items -->
-  <div class="carousel-inner">
+  <!-- <div class="carousel-inner">
     <div class="item active" id="carousel1">
       <div class="main-info-box1">
         <h1>DZI BEAD BRACELETS</h1>
@@ -82,15 +100,15 @@
       <img src="images/homepage.png" id="main-carousel1"/>
     </div>
   </div>
-  
+   -->
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+  <!-- <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
   <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-</div>
+</div> -->
 <!-- End Carousel begin Lower Rows -->
 <div class="main-row-one">
   <div class="row-one-left">
