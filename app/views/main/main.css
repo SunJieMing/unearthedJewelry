@@ -127,6 +127,14 @@ nav h1 {
   position: relative;
   height: 650px;
  }
+
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.left {
+  background-image: none;
+}
+
 .carousel2 {
   
 }
