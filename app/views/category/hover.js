@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	//console.log("READY!!!");
+	console.log("READY!!!");
 
 
 $('.category-image1').mouseenter(function(){
