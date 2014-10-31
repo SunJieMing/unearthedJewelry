@@ -18,16 +18,16 @@
     </p> 
     <hr>
   </div>
-  <div class="image-container" ng-repeat="product in whatever">
-    <div class="category-image1">
-      <img src="/images/1resize.jpg"/>
-        <div class="image-hover1">
+  <div class="image-container" ng-repeat="product in braceletList.results">
+    <div class="category-image" ng-mouseenter="reveal()" ng-mouseleave="hide()">
+      <img ng-src="{{product.mainImage.url}}" /> 
+        <div class="image-hover" ng-show="coverToggle">
           <h2>
             {{product.name}}
           </h2>
-          <p>
-            {{product.description}}
-          </p>
+          <p> 
+            {{product.mainDescription}}
+          </p> 
         </div>
     </div>
   </div> 
