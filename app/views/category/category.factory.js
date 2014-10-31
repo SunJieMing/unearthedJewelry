@@ -2,8 +2,9 @@
 
 angular.module('unearthedApp')
 .factory('CategoryFactory', function ($q, $http, $stateParams) {
+
   var getBracelets = function(){
-   var deferred = $q.defer();
+    var deferred = $q.defer();
 
    $http({
     method: 'GET',
