@@ -1,4 +1,8 @@
 angular.module('unearthedApp')
-  .controller('CategoryCtrl', function($scope) {
-    $scope.test = 'Hello World!';
+.controller('CategoryCtrl', ['$scope', 'CategoryFactory', function($scope, CategoryFactory) {
+  $scope.test = 'Hello World!';
+  CategoryFactory.getBracelets().then(function(data){
+    console.log(data);
   });
+
+}]);
