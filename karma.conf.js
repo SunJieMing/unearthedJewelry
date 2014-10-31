@@ -6,17 +6,24 @@ module.exports = function(config) {
     // base path, that will be used to resolve files and exclude
     basePath: '',
 
+    plugins : [
+        'karma-junit-reporter',
+        'karma-chrome-launcher',
+        'karma-jasmine'
+        ],
+
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
     files: [
+      'app/bower_components/**/*.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/scripts/*.js',
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      'app/views/app.js',
+      'app/views/**/*.js',
+      'test/spec/**/*.js',
+      'bower_components/angular-mocks/angular-mocks.js'
     ],
 
     // list of files / patterns to exclude

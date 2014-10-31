@@ -9,18 +9,6 @@ angular.module('unearthedApp')
   });
 });
 
-//This reinitializes the carousel and eliminates several erratic errors.
-//Found the answer to this issue on SO: 
-//http://stackoverflow.com/questions/20137900/controller-carousel-required-by-directive-ngtransclude-cant-be-found
-
-// angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
-//     .controller('CarouselController', ['$scope', '$timeout', '$transition', '$q', function        ($scope, $timeout, $transition, $q) {
-// }]).directive('carousel', [function() {
-//     return {
-
-//     }
-// }]);
-
 angular.module('unearthedApp').controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
   var slides = $scope.slides = [];
