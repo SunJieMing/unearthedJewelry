@@ -20,7 +20,7 @@ angular.module('unearthedApp')
   	console.log('hiding');
   }
 
-}])
+}]);
 
 
 // .directive('productHover', function() {

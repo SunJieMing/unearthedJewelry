@@ -1,4 +1,3 @@
-'use strict';
 
 angular.module('unearthedApp')
 .factory('CategoryFactory', function ($q, $http, $stateParams) {
@@ -6,10 +5,10 @@ angular.module('unearthedApp')
   var getBracelets = function(){
     var deferred = $q.defer();
 
-   $http({
-    method: 'GET',
-    url: 'https://api.parse.com/1/classes/bracelets',
-  }).success(function(info, status){
+    $http({
+      method: 'GET',
+      url: 'https://api.parse.com/1/classes/bracelets',
+    }).success(function(info, status){
           // console.log('info', info, 'status', status);
           deferred.resolve(info);
           // return info;
