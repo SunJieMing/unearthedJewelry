@@ -1,14 +1,14 @@
 angular.module('unearthedApp')
-.factory('CategoryFactory', function ($q, $http, $stateParams) {
+.factory('ProductFactory', function($q, $http, $stateParams){
 
-  var getBracelets = function(){
+  var getBracelet = function(){
     var deferred = $q.defer();
 
     $http({
       method: 'GET',
-      url: 'https://api.parse.com/1/classes/bracelets',
+      url: 'https://api.parse.com/1/classes/bracelets/' + $stateParams.id,
     }).success(function(info, status){
-          // console.log('info', info, 'status', status);
+          console.log('info', info, 'status', status);
           deferred.resolve(info);
           // return info;
         }).error(function(info, status){
@@ -20,6 +20,6 @@ angular.module('unearthedApp')
       }
 
       return {
-        getBracelets: getBracelets
+        getBracelet: getBracelet
       };
-    });
+});

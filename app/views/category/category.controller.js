@@ -12,12 +12,10 @@ angular.module('unearthedApp')
 
   $scope.reveal = function () {
   	$scope.coverToggle = true;
-  	console.log('showing');
   }
 
   $scope.hide = function () {
   	$scope.coverToggle = false;
-  	console.log('hiding');
   }
 
 }]);

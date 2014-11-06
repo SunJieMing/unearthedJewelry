@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	console.log("READY!!!");
-
 // $('.category-image').mouseenter(function(){
 // 	$('.image-hover').fadeIn('fast');
 // });

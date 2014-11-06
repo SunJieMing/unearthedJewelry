@@ -23,7 +23,7 @@
       <img ng-src="{{product.mainImage.url}}" /> 
         <div class="image-hover" ng-show="coverToggle">
           <h2>
-            {{product.name}}
+            <a ui-sref="product({id: product.objectId})">{{product.name}}</a>
           </h2>
           <p> 
             {{product.mainDescription}}

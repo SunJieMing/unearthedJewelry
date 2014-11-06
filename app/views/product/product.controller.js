@@ -1,4 +1,6 @@
 angular.module('unearthedApp')
-.controller('ProductCtrl', function($scope) {
-  $scope.test = 'Hello World!';
-});
+.controller('ProductCtrl', ['$scope', 'ProductFactory', function($scope, ProductFactory) {
+  console.log('product controller fired!');
+  ProductFactory.getBracelet();
+
+}]);
