@@ -1,11 +1,11 @@
 <div ng-include="'views/components/navbar/navbar.html'"></div>
 
 	<div class="product-container">
-		<h1 class="product-title">RED DRAGON</h1>
-		<h2 class="product-subtitle">ORIGINAL DZI BEAD BRACELET</h2>
+		<h1 class="product-title">{{individualItem.name}}</h1>
+		<h2 class="product-subtitle">{{individualItem.mainDescription}}</h2>
 		<section class="product-info">
 			<div class="product-images">
-				<img class="product-image" src="/images/1resize.jpg"/>
+				<img class="product-image" ng-src="{{individualItem.mainImage.url}}"/>
 				<div class="thumbnails">
 					<ul>
 						<li>
@@ -45,6 +45,5 @@
 		<br>
 		<br>
 	</div>
-</div>
  
 <div ng-include="'views/components/footer/footer.html'"></div>
