@@ -4,13 +4,9 @@ angular.module('unearthedApp')
   
   $scope.categoryList = {};
 
-  if ($stateParams.category === 'bracelets') {
-    console.log('great success!!!');
-  }
-
   CategoryFactory.getCategoryList().then(function(data){
     $scope.categoryList = data;
-    console.log($scope.categoryList);
+    //console.log($scope.categoryList);
   });
 
   $scope.coverToggle = false;
