@@ -1,12 +1,12 @@
 angular.module('unearthedApp')
 .factory('ProductFactory', function($q, $http, $stateParams){
 
-  var getBracelet = function(){
+  var getItem = function(){
     var deferred = $q.defer();
 
     $http({
       method: 'GET',
-      url: 'https://api.parse.com/1/classes/bracelets/' + $stateParams.id,
+      url: 'https://api.parse.com/1/classes/' + $stateParams.category + '/' + $stateParams.id,
     }).success(function(info, status){
           console.log('info', info, 'status', status);
           deferred.resolve(info);
@@ -20,6 +20,6 @@ angular.module('unearthedApp')
       }
 
       return {
-        getBracelet: getBracelet
+        getItem: getItem
       };
 });

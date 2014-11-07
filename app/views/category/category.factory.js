@@ -1,12 +1,12 @@
 angular.module('unearthedApp')
 .factory('CategoryFactory', function ($q, $http, $stateParams) {
 
-  var getBracelets = function(){
+  var getCategoryList = function(){
     var deferred = $q.defer();
 
     $http({
       method: 'GET',
-      url: 'https://api.parse.com/1/classes/bracelets',
+      url: 'https://api.parse.com/1/classes/' + $stateParams.category,
     }).success(function(info, status){
           // console.log('info', info, 'status', status);
           deferred.resolve(info);
@@ -20,6 +20,6 @@ angular.module('unearthedApp')
       }
 
       return {
-        getBracelets: getBracelets
+        getCategoryList: getCategoryList
       };
     });

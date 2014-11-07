@@ -1,11 +1,16 @@
 angular.module('unearthedApp')
 
-.controller('CategoryCtrl', ['$scope', 'CategoryFactory', function($scope, CategoryFactory) {
-  $scope.braceletList = {};
+.controller('CategoryCtrl', ['$scope', 'CategoryFactory', '$stateParams', function($scope, CategoryFactory, $stateParams) {
+  
+  $scope.categoryList = {};
 
-  CategoryFactory.getBracelets().then(function(data){
-    $scope.braceletList = data;
-    console.log($scope.braceletList);
+  if ($stateParams.category === 'bracelets') {
+    console.log('great success!!!');
+  }
+
+  CategoryFactory.getCategoryList().then(function(data){
+    $scope.categoryList = data;
+    console.log($scope.categoryList);
   });
 
   $scope.coverToggle = false;
@@ -19,13 +24,3 @@ angular.module('unearthedApp')
   }
 
 }]);
-
-
-// .directive('productHover', function() {
-//  	return {
-
-//  		template:'<h2>{{product.name}}</h2><p>{{product.mainDescription}}</p>'
-
-//  	};
-
-//  });
