@@ -9,14 +9,4 @@ angular.module('unearthedApp')
     //console.log($scope.categoryList);
   });
 
-  $scope.coverToggle = false;
-
-  $scope.reveal = function () {
-  	$scope.coverToggle = true;
-  }
-
-  $scope.hide = function () {
-  	$scope.coverToggle = false;
-  }
-
 }]);

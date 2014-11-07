@@ -19,9 +19,9 @@
     <hr>
   </div>
   <div class="image-container" ng-repeat="product in categoryList.results">
-    <div class="category-image" ng-mouseenter="reveal()" ng-mouseleave="hide()">
+    <div class="category-image" ng-mouseenter="showCover = true" ng-mouseleave="showCover = false">
       <img ng-src="{{product.mainImage.url}}" /> 
-        <div class="image-hover" ng-show="coverToggle">
+        <div class="image-hover" ng-show="showCover">
           <h2>
             <a ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
           </h2>
