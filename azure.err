@@ -1,4 +1,4 @@
-Wed Nov 12 2014 11:03:51 GMT-0700 (MST):
+Wed Nov 12 2014 11:28:22 GMT-0700 (MST):
 { [TypeError: Object #<Subscription> has no method 'getPortalUrl']
   stack: [Getter/Setter],
   __frame: 

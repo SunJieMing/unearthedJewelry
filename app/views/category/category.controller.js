@@ -5,6 +5,7 @@ angular.module('unearthedApp')
   
   $scope.categoryList = {};
 
+
   CategoryFactory.getCategoryList().then(function(data){
     $scope.categoryList = data;
     //console.log($scope.categoryList);
