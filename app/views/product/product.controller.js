@@ -1,3 +1,4 @@
+'use strict';
 angular.module('unearthedApp')
 .controller('ProductCtrl', ['$scope', 'ProductFactory', function($scope, ProductFactory) {  
   $scope.individualItem = {};

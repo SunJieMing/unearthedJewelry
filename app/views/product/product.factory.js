@@ -1,3 +1,4 @@
+'use strict';
 angular.module('unearthedApp')
 .factory('ProductFactory', function($q, $http, $stateParams){
 

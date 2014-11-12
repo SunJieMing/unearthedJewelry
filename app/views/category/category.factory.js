@@ -1,3 +1,4 @@
+'use strict';
 angular.module('unearthedApp')
 .factory('CategoryFactory', function ($q, $http, $stateParams) {
 

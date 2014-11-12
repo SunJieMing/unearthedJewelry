@@ -1,3 +1,4 @@
+'use strict';
 angular.module('unearthedApp')
 
 .controller('CategoryCtrl', ['$scope', 'CategoryFactory', '$stateParams', function($scope, CategoryFactory, $stateParams) {

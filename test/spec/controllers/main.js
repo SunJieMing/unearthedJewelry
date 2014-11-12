@@ -17,7 +17,7 @@ describe('Controller: MainCtrl', function () {
   }));
 
   it('should have a hello world test', function () {
-
     expect(scope.test).toBe('Hello World!');
   });
+
 });
