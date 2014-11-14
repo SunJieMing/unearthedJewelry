@@ -18,12 +18,12 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // JASMINE or something -- insert it.  'define' is not defined.
+      'https://code.jquery.com/jquery-1.11.1.min.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/bower_components/angular-scenario/angular-scenario.js',
       'app/bower_components/angular-ui-router/release/angular-ui-router.js',
-      'app/bower_components/jquery/dist/jquery.js',
       'app/bower_components/bootstrap/dist/js/bootstrap.js',
       'app/bower_components/es5-shim/es5-sham.js',
       'app/bower_components/es5-shim/es5-shim.js',
