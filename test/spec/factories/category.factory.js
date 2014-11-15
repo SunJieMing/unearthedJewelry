@@ -1,5 +1,4 @@
 'use strict';
-
 describe('Factory: CategoryFactory', function () {
 
   beforeEach(module('unearthedApp'));
