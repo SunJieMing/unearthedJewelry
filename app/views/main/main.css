@@ -52,6 +52,17 @@ nav h1 {
   transition:.5s;
   text-decoration: none;
 }
+#purchase-button:hover {
+  color: #b2b2b2;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+  text-decoration: none;
+  cursor: pointer;
+}
 #main-header-left a {
   color: white;
 }
