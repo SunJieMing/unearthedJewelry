@@ -10,15 +10,11 @@ describe('Factory: CategoryFactory', function () {
     categoryFactory = CategoryFactory;
   }));
 
-  it('does this work?', function() {
-    expect(true).toBe(true);
-  });
-
-  it('should have a GET request function', function() {
+  it('should have a getCategoryList function', function() {
     expect(categoryFactory.getCategoryList).not.toBe(undefined);
   });
 
-  it('should have a working getCategoryList function', function() {
+  it('should have a working getCategoryList function that integrates with the server', function() {
     expect(categoryFactory.getCategoryList).not.toBe(undefined);
     var test = categoryFactory.getCategoryList();
     expect(typeof test).toBe('object');
