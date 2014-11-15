@@ -20,5 +20,4 @@ describe('Factory: CategoryFactory', function () {
     expect(typeof test).toBe('object');
   });
 
-
 });
