@@ -5,7 +5,6 @@ angular.module('unearthedApp')
   
   ProductFactory.getItem().then(function(data){
     $scope.individualItem = data;
-    //console.log($scope.individualItem);
   });
 
 }]);

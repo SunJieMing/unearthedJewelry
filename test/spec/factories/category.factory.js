@@ -14,5 +14,15 @@ describe('Factory: CategoryFactory', function () {
     expect(true).toBe(true);
   });
 
+  it('should have a GET request function', function() {
+    expect(categoryFactory.getCategoryList).not.toBe(undefined);
+  });
+
+  it('should have a working getCategoryList function', function() {
+    expect(categoryFactory.getCategoryList).not.toBe(undefined);
+    var test = categoryFactory.getCategoryList();
+    expect(typeof test).toBe('object');
+  });
+
 
 });
