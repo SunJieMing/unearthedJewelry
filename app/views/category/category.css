@@ -24,7 +24,24 @@ body {
   border-top: 1px solid #999999;
 }
 .image-container {
-  margin: auto;
+/*  margin: auto;
+*/
+width: 32%;
+margin-left: 10%;
+margin-right: 0;
+float: left;
+}
+.cover {
+  -webkit-transition: .3s linear all;
+  transition:  .3s linear all;
+  opacity: 1;
+}
+.cover.ng-hide-remove,
+.cover.ng-hide-add,.cover.ng-hide {
+  display:block!important;
+}
+.cover.ng-hide {
+  opacity: 0;
 }
 .category-image {
   margin: 3%;
@@ -97,5 +114,5 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  
+
 }
