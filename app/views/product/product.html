@@ -1,27 +1,12 @@
 <div ng-include="'views/components/navbar/navbar.html'"></div>
-
+<div class="page-container">
 	<div class="product-container">
 		<h1 class="product-title">{{individualItem.name}}</h1>
 		<h2 class="product-subtitle">{{individualItem.mainDescription}}</h2>
 		<section class="product-info">
 			<div class="product-images">
 				<img class="product-image" ng-src="{{individualItem.mainImage.url}}"/>
-				<div class="thumbnails">
-					<ul>
-						<li>
-							<img class="thumbnail-1" src="/images/1resize.jpg"/>
-						</li>
-						<li>
-							<img class="thumbnail-2" src="/images/4resize.jpg"/>
-						</li>
-						<li>
-							<img class="thumbnail-3" src="/images/5resize.jpg"/>
-						</li>
-						<li>
-							<img class="thumbnail-4" src="/images/7resize.jpg"/>
-						</li>
-					</ul>
-				</div>
+			
 			</div>
 			<!-- <div class="product-info"> -->
 				<p>{{individualItem.mainDescription}}</p>
@@ -56,8 +41,28 @@
 
 				  <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
 				</div>
+
 			<!-- </div> -->
 		</section>
+
+				<div class="thumbnails">
+					<ul>
+						<li>
+							<img class="thumbnail" src="/images/1resize.jpg"/>
+						</li>
+						<li>
+							<img class="thumbnail" src="/images/4resize.jpg"/>
+						</li>
+						<li>
+							<img class="thumbnail" src="/images/5resize.jpg"/>
+						</li>
+						<li>
+							<img class="thumbnail" src="/images/7resize.jpg"/>
+						</li>
+					</ul>
+				</div>
+
+				
 		<br>
 		<br>
 		<br>
@@ -66,5 +71,5 @@
 		<br>
 		<br>
 	</div>
- 
+ </div>
 <div ng-include="'views/components/footer/footer.html'"></div>
