@@ -5,7 +5,7 @@
 		<h2 class="product-subtitle">{{individualItem.mainDescription}}</h2>
 		<section class="product-info">
 			<div class="product-images">
-				<img class="product-image" ng-src="{{individualItem.mainImage.url}}"/>
+				<img class="product-image" ng-src="{{mainImageUrl}}"/>
 			
 			</div>
 			<!-- <div class="product-info"> -->
@@ -18,9 +18,10 @@
 							<li>1 mother pearl dzi bead</li>
 						</ul>
 					<hr>
-				<h3 class="price">${{individualItem.price}}</h3>
-				<div ng-controller="PurchaseModalCtrl">
 
+				<h3 class="price">${{individualItem.price}}</h3>
+
+				<div ng-controller="PurchaseModalCtrl">
 				  <script type="text/ng-template" id="myModalContent.html">
 				      <div class="modal-header">
 				          <h3 class="modal-title">Im a modal!</h3>
@@ -38,7 +39,6 @@
 				          <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
 				      </div>
 				  </script>
-
 				  <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
 				</div>
 
@@ -48,16 +48,19 @@
 				<div class="thumbnails">
 					<ul>
 						<li>
-							<img class="thumbnail" src="/images/1resize.jpg"/>
+							<img class="thumbnail" ng-click="switchImage(individualItem.mainImage.url)" ng-src="{{individualItem.mainImage.url}}"/>
 						</li>
 						<li>
-							<img class="thumbnail" src="/images/4resize.jpg"/>
+							<img class="thumbnail" ng-click="switchImage(individualItem.image1.url)" ng-src="{{individualItem.image1.url}}"/>
 						</li>
 						<li>
-							<img class="thumbnail" src="/images/5resize.jpg"/>
+							<img class="thumbnail" ng-click="switchImage(individualItem.image2.url)" ng-src="{{individualItem.image2.url}}"/>
 						</li>
 						<li>
-							<img class="thumbnail" src="/images/7resize.jpg"/>
+							<img class="thumbnail" ng-click="switchImage(individualItem.image3.url)" ng-src="{{individualItem.image3.url}}"/>
+						</li>
+						<li>
+							<img class="thumbnail" ng-click="switchImage(individualItem.image4.url)" ng-src="{{individualItem.image4.url}}"/>
 						</li>
 					</ul>
 				</div>
