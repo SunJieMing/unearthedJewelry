@@ -3,7 +3,7 @@
     <h1><a ui-sref="main">UNEARTHED</a></h1>
   </div>
   <div id="main-header-center">
-    <ul>
+    <ul id="responsive-menu">
       <li>
         <p><a ui-sref="category({category: 'bracelets'})">BRACELETS</a></p>
       </li>
@@ -40,24 +40,31 @@
 
     <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
   </div>
-  <!-- ******* Begin Mobile Nav ******* -->
-  <div class="mobile-nav">
-   <div class="menu-btn" id="menu-btn">
-     <div></div>
-     <span></span>
-     <span></span>
-     <span></span>
-   </div>
+<!-- ******* Begin Mobile Nav ******* -->
+  
 
-   <div class="responsive-menu">
-    <ul>
-     <li>BRACELETS</li>
-     <li>RINGS</li>
-     <li>STONES</li>
-     <li>NECKLACES</li>
-   </ul>
- </div>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+     <div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 </div>
-</nav>
-<!-- ******* End Mobile Nav ******* -->
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="category({category: 'bracelets'})">BRACELETS</a></li>
+                <li><a ui-sref="category({category: 'rings'})">RINGS</a></li>
+                <li><a ui-sref="category({category: 'stones'})">STONES</a></li>
+                <li><a ui-sref="category({category: 'necklaces'})">NECKLACES</a></li>
+                <li><a href="">PURCHASE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- ******* End Mobile Nav ********* -->
 </nav>
