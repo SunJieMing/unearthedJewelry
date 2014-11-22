@@ -1,10 +1,11 @@
 /* Space out content a bit */
 body {
 }
-.category-top-image {
-  height: 100%;
+.top-image {
+  height: auto;
   width: 100%;
-  background-image: url('/images/121-7.jpg');
+  /*background-image: url('/images/121-7.jpg');*/
+
 }
 .category-container {
   height: 100%;
@@ -127,6 +128,8 @@ float: left;
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: 767px) {
+  .top-image {
+    padding-top: 60px;
+  }
 }
