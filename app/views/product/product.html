@@ -34,7 +34,28 @@
 						</ul>
 					<hr>
 				<h3 class="price">${{individualItem.price}}</h3>
-				<h2>PURCHASE</h2>
+				<div ng-controller="PurchaseModalCtrl">
+
+				  <script type="text/ng-template" id="myModalContent.html">
+				      <div class="modal-header">
+				          <h3 class="modal-title">Im a modal!</h3>
+				      </div>
+				      <div class="modal-body">
+				          <ul>
+				              <li ng-repeat="item in items">
+				                  <a ng-click="selected.item = item">{{ item }}</a>
+				              </li>
+				          </ul>
+				          Selected: <b>{{ selected.item }}</b>
+				      </div>
+				      <div class="modal-footer">
+				          <button class="btn btn-primary" ng-click="ok()">OK</button>
+				          <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+				      </div>
+				  </script>
+
+				  <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
+				</div>
 			<!-- </div> -->
 		</section>
 		<br>

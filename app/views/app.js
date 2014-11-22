@@ -3,7 +3,7 @@ angular
 .module('unearthedApp', [
   'ui.router',
   'ui.bootstrap'
-  ])
+])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
   
   $httpProvider.defaults.headers.common = { 

@@ -1,15 +1,16 @@
 'use strict';
-angular.module('unearthedApp')
-.factory('ProductFactory', function($q, $http, $stateParams){
 
-  var getItem = function(){
+angular.module('unearthedApp')
+.factory('MainFactory', function ($q, $http) {
+
+  var getPageCopy = function(){
     var deferred = $q.defer();
 
     $http({
       method: 'GET',
-      url: 'https://api.parse.com/1/classes/' + $stateParams.category + '/' + $stateParams.id,
+      url: 'https://api.parse.com/1/classes/mainCopy',
     }).success(function(info, status){
-          //console.log('info', info, 'status', status);
+          // console.log('info', info, 'status', status);
           deferred.resolve(info);
           // return info;
         }).error(function(info, status){
@@ -21,6 +22,6 @@ angular.module('unearthedApp')
       }
 
       return {
-        getItem: getItem
+        getPageCopy: getPageCopy
       };
-});
+    });

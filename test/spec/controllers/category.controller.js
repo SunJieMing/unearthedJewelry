@@ -17,10 +17,10 @@ describe('Controller: CategoryCtrl', function () {
   }));
 
   //This allows me to test the injected factory.
-  var categoryFactory; 
+  var categoryFactory;
 
-  beforeEach(inject(function(CategoryFactory) { 
-    categoryFactory = CategoryFactory; 
+  beforeEach(inject(function(CategoryFactory) {
+    categoryFactory = CategoryFactory;
   }));
 
   it('should have a getCategoryList method', function () {

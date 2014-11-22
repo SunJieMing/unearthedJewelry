@@ -46,13 +46,13 @@ describe('Controller: CarouselDemoCtrl', function () {
 
   it('carousel array should have a length of three', function() {
     expect(scope.slides.length).toBe(3);
-  })  
+  });
 
   it('first carousel image is not properly set', function() {
     var firstItem = scope.slides[0];
     expect(firstItem.image).toBe('images/homepage.png');
     expect(firstItem.title).toBe('DZI BEAD BRACELETS');
     expect(firstItem.description).toBe('The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India.');
-  })
+  });
 
 });
