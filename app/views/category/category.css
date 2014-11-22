@@ -1,13 +1,14 @@
 /* Space out content a bit */
 body {
 }
-.top-image {
+.category-top-image {
+  height: 100%;
   width: 100%;
-  height: 600px;
+  background-image: url('/images/121-7.jpg');
 }
 .category-container {
   height: 100%;
-  width: 80%;
+  width:100% 
   margin: auto;
 }
 .category-description h1 {

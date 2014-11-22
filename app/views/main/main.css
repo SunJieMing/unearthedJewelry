@@ -155,6 +155,8 @@ nav h1 {
   background-image: none;
 }
 
+The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India.
+
 .carousel2 {
   
 }
@@ -247,6 +249,12 @@ nav h1 {
   color: white;
   padding-left: 70px;
   padding-right: 60px;
+}
+.main-row-three {
+  display: none;
+}
+.main-row-four {
+  display: none;
 }
 .text-div1 {
   height: 100%;
@@ -482,13 +490,143 @@ nav.navbar.navbar-inverse.navbar-static-top {
 .row-one-left {
   width: 100%;
 }
+.main-row-three {
+  height: 300px;
+  width: 100%;
+  display: block;
+  position: relative;
+  background: #1e1e1e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e1e1e 0%, #5e5e5e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e1e1e), color-stop(100%,#5e5e5e));*/ /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e1e1e 0%,#5e5e5e 100%);*/ /* IE10+ */
+  background: linear-gradient(to bottom,  #1e1e1e 0%,#5e5e5e 100%);*/ /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#5e5e5e',GradientType=0 );*/ /* IE6-9 */
+}
+.main-row-three h1 {
+  padding: 10px;
+  padding-top: 60px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+.main-row-three p {
+  padding: 60px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+.main-row-four {
+  height: 350px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/handfinal.png');
+}
+.main-row-two {
+  height: 350px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/bellfinal.png');
+}
+.row-two-left {
+  display: none;
+}
+.row-one-right {
+  display: none;
+}
+.row-two-center {
+  display: none;
+}
+.row-two-right{
+  display: none;
+}
 
+div#main-footer-center {
+  width: 60%;
+  display: inline-block;
+  
+}
+#main-footer-center ul {
+  width: 100%;
+}
+#main-footer-center li {
+  margin: auto;
+}
 
+.main-info-box1 {
+  background-color: rgba(0,0,0,.6);
+  height: 400px;
+  width: 300px;
+  float: left;
+  position: absolute;
+  top: 100px;
+  left: 14%;
+  z-index: 5;
+}
+.main-info-box1 h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.main-info-box1 p {
+  font-size: 16px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+.main-info-box2 {
+  background-color: rgba(0,0,0,.6);
+  height: 400px;
+  width: 300px;
+  float: left;
+  position: absolute;
+  top: 100px;
+  left: 14%;
+  z-index: 5;
+}
+.main-info-box2 h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.main-info-box2 p {
+  font-size: 16px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
 
+.main-info-box3 {
+  background-color: rgba(0,0,0,.6);
+  height: 400px;
+  width: 300px;
+  float: left;
+  position: absolute;
+  top: 100px;
+  left: 14%;
+  z-index: 5;
+}
+.main-info-box3 h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.main-info-box3 p {
+  font-size: 16px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
 
-
-
-
+The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India.
 
 
 
@@ -508,6 +646,17 @@ nav.navbar.navbar-inverse.navbar-static-top {
   #main-carousel1 {
     height: 300px;
   }
+  #main-footer-center ul {
+    margin: auto 0;
+  }
+  #main-footer-left {
+    display: none;
+    
+  }
+  #main-footer-right {
+    display: none;
+    
+  }
 }
 @media screen and (max-width: 480px) {
   #main-header-center li {
@@ -524,6 +673,8 @@ nav.navbar.navbar-inverse.navbar-static-top {
   #main-carousel1 {
     height: 200px;
   }
+  
+
 }
 
 
