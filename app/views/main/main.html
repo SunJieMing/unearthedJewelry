@@ -5,15 +5,15 @@
 
 <!-- Test Carousel -->
 
-<div ng-controller="CarouselDemoCtrl">
+<div ng-controller="CarouselCtrl">
   <div>
     <carousel interval="myInterval">
       <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <img src="images/homepage.png" style="margin:auto;">
         <div class="main-info-box1">
-          <h1>{{slide.title}}</h1>
+          <h1>{{slide.carouselTitle}}</h1>
           <hr>
-          <p>{{slide.description}}</p>
+          <p>{{slide.carouselText}}</p>
         </div>
       </slide>
     </carousel>
@@ -26,7 +26,7 @@
       HISTORY
     </h1>
     <p>
-      Lots and lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. 
+      {{history}}
     </p>
     </div>
   </div><!--
@@ -45,8 +45,7 @@
       QUALITY
     </h1>
     <p>
-      This is a change to the file!!!!!!  
-      Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here. Lots and lots of random text about the history of something should go in this box right here.
+      {{quality}}
     </p>
     </div>
     
