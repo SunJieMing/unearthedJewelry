@@ -6,6 +6,7 @@ angular.module('unearthedApp')
   ProductFactory.getItem().then(function(data){
     $scope.individualItem = data;
     $scope.mainImageUrl = data.mainImage.url;
+    console.log(data);
   });
 
   $scope.switchImage = function(img) {
