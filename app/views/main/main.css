@@ -53,6 +53,9 @@ nav h1 {
   transition:.5s;
   text-decoration: none;
 }
+.purchase-button {
+  margin-top: 14px;
+}
 .purchase-button:hover {
   color: #b2b2b2;
   -o-transition:.5s;
