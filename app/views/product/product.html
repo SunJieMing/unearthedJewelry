@@ -9,13 +9,10 @@
 			
 			</div>
 			<!-- <div class="product-info"> -->
-				<p>{{individualItem.mainDescription}}</p>
+				<p>{{individualItem.productInfo}}</p>
 					<hr>
 						<ul class="product-specs">
-							<li>9 fire beads from dzi tierra</li>
-							<li>2 rotunda rodas</li>
-							<li>2 mini beads 18k gold</li>
-							<li>1 mother pearl dzi bead</li>
+							<li ng-repeat="feature in individualItem.features">{{feature}}</li>
 						</ul>
 					<hr>
 
