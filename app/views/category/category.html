@@ -6,12 +6,7 @@
 
 <!-- Top Image Here -->
 <div class="category-top-image">
-<<<<<<< HEAD
-
   <img clsas="top-image" ng-src="{{imageUrl}}"/>
-=======
-  <img class="top-image" ng-src="{{imageUrl}}"/>
->>>>>>> latest changes
 </div>
 <div class="category-container">
   <div class="category-description">
@@ -24,14 +19,9 @@
     <hr>
   </div>
   <div class="image-container" ng-repeat="product in categoryList.results">
-<<<<<<< HEAD
     <div class="category-image" ng-mouseenter="showCover = true" ng-mouseleave="showCover = false">
       <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
       <div class="image-sold"> 
-=======
-    <div class="category-image" ng-mouseenter="showCover=true" ng-mouseleave="showCover=false">
-      <img ng-src="{{product.mainImage.url}}" /> 
->>>>>>> latest changes
         <div class="cover image-hover" ng-show="showCover">
           <h2>
             <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
