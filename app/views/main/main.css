@@ -74,8 +74,6 @@ nav h1 {
   margin: auto;
   text-align: center;
   height: 60px;
-
-
 }
 #main-header-center li {
   text-decoration: none;
@@ -108,8 +106,13 @@ nav h1 {
   height: 60px;
 }
 .mobile-nav {
-   display: none;
+  display: none;
   }
+.main-image {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
 .main-info-box1 {
   background-color: rgba(0,0,0,.6);
   height: 400px;
@@ -137,7 +140,8 @@ nav h1 {
 }
 #carousel1 {
   position: relative;
-  height: 650px;
+  width: 100%;
+  height: auto;
  }
 
 .carousel {
@@ -145,7 +149,8 @@ nav h1 {
 }
 
 .carousel-inner > .item > img {
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-control.right {
@@ -226,7 +231,7 @@ The elegant design of these bracelets is unmatched this side of India. The elega
 }
 .row-two-right {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 40%;
   display: inline-block;
   margin: 0;
@@ -422,6 +427,12 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 @media screen and (max-width: 767px) {
 
+  .carousel-inner > .item > img {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+
   #main-header-center li {
     text-decoration: none;
     margin-top: 17px;
@@ -454,7 +465,8 @@ nav.navbar.navbar-inverse.navbar-static-top {
     cursor: pointer;
   }
   #carousel1 {
-    height: 400px;
+    height: 100px;
+
   }
   #main-carousel1 {
     height: 400px;
