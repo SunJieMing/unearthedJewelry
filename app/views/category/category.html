@@ -19,9 +19,11 @@
     <hr>
   </div>
   <div class="image-container" ng-repeat="product in categoryList.results">
-    <div class="category-image" ng-mouseenter="showCover = true" ng-mouseleave="showCover = false">
+    <div class="category-image" ng-mouseenter="showCover=!product.sold" ng-mouseleave="showCover=false">
       <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
-      <div class="image-sold"> 
+      <div class="image-sold" ng-show="product.sold"> 
+        <h1>Sold</h1>
+      </div> 
         <div class="cover image-hover" ng-show="showCover">
           <h2>
             <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
@@ -30,7 +32,6 @@
             {{product.mainDescription}}
           </p> 
         </div>
-      </div>
     </div>
   </div> 
 </div>

@@ -11,6 +11,7 @@ angular.module('unearthedApp')
 
   CategoryFactory.getCategoryList().then(function(data) {
     $scope.categoryList = data;
+    console.log(data);
   });
 
   CategoryFactory.getCategoryCopy().then(function(data) {
@@ -34,5 +35,14 @@ angular.module('unearthedApp')
       $scope.imageUrl = copy.necklaceImage.url;
     }
   });
+$scope.isSold = function (item) {
+  if (item.sold === true) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+
 
 }]);
