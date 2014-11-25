@@ -418,6 +418,10 @@ nav.navbar.navbar-inverse.navbar-static-top {
     margin-top: 17px;
     font-size: 25px;
   }
+  .purchase-button {
+    margin-top: 17px;
+    font-size: 25px;
+  }
   #carousel1 {
     height: 500px;
   }
