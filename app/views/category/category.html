@@ -6,7 +6,7 @@
 
 <!-- Top Image Here -->
 <div class="category-top-image">
-<img clsas="top-image" ng-src="{{imageUrl}}"/>
+  <img clsas="top-image" ng-src="{{imageUrl}}"/>
 </div>
 <div class="category-container">
   <div class="category-description">
@@ -20,7 +20,8 @@
   </div>
   <div class="image-container" ng-repeat="product in categoryList.results">
     <div class="category-image" ng-mouseenter="showCover = true" ng-mouseleave="showCover = false">
-      <img ng-src="{{product.mainImage.url}}" /> 
+      <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
+      <div class="image-sold"> 
         <div class="cover image-hover" ng-show="showCover">
           <h2>
             <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
@@ -29,6 +30,7 @@
             {{product.mainDescription}}
           </p> 
         </div>
+      </div>
     </div>
   </div> 
 </div>
@@ -36,4 +38,3 @@
 
 <!-- End Lower Rows, Begin Footer -->
 <div ng-include="'views/components/footer/footer.html'"></div>
- 
