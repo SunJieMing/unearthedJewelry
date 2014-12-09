@@ -16,14 +16,21 @@
     <p>
       {{mainCopy}}
     </p> 
-    <hr>
+    <hr/>
+
+
+
+
+
   </div>
   <div class="image-container" ng-repeat="product in categoryList.results">
     <div class="category-image" ng-mouseenter="showCover=!product.sold" ng-mouseleave="showCover=false">
-      <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
-      <div class="image-sold" ng-show="product.sold"> 
+    <ul class="rig columns-3">
+      <li>
+        <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
+        <div class="image-sold" ng-show="product.sold"> 
         <h1>Sold</h1>
-      </div> 
+        </div>
         <div class="cover image-hover" ng-show="showCover">
           <h2>
             <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
@@ -31,7 +38,9 @@
           <p> 
             {{product.mainDescription}}
           </p> 
-        </div>
+        </div> 
+      </li>
+    </ul>
     </div>
   </div> 
 </div>

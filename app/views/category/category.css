@@ -2,6 +2,10 @@
 body {
 
 }
+li {
+  margin: none;
+  padding: none;
+}
 .image-sold {
   position: absolute;
   height: 100%;
@@ -25,16 +29,17 @@ body {
   font-size: 100px;
 }
 .category-item-image {
+  height: ;
+  width: ;
 z-index: -1;
 }
 .top-image {
   width: 100%;
-  /*background-image: url('/images/121-7.jpg');*/
 }
 .category-container {
   height: 100%;
-  width: 100%; 
-  margin: auto;
+  width: 95%;
+  margin-left: 70px;
 }
 .category-description h1 {
   margin-top: 50px;
@@ -69,15 +74,15 @@ float: left;
   opacity: 0;
 }
 .category-image {
-  margin: 10px;
+  /*margin: 10px;*/
   display: inline-block;
   position: relative;
 }
-.category-image img {
+/*.category-image img {
   height: 300px;
   width: 420px;
   display: inline-block;
-}
+}*/
 .image-hover {
   position: absolute;
   height: 100%;
@@ -149,6 +154,80 @@ float: left;
   line-height: 40px;
   padding-bottom: 19px;
 }
+
+p.ng-binding {
+  margin-bottom: 5px;
+}
+
+
+/************ Responsive Grid Styles *************/
+
+
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+ul.rig {
+  list-style: none;
+  font-size: 0px;
+  /*margin-left: -2.5%;*/ /* should match li left margin */
+}
+ul.rig li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  padding: none;
+  margin: none;
+  background: #fff;
+  /*border: 1px solid #ddd;*/
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  /*box-shadow: 0 0 5px #ddd;*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ul.rig li img {
+  height: 250px;
+  width: auto;
+  margin: 0px;
+}
+ul.rig li h3 {
+  /*margin: 0 0 5px;*/
+}
+ul.rig li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+  width: 30.83%; /* this value + 2.5 should = 33% */
+}
+
+ 
+@media (max-width: 480px) {
+  ul.grid-nav li {
+    display: block;
+    /*margin: 0 0 5px;*/
+  }
+  ul.grid-nav li a {
+    display: block;
+  }
+  ul.rig {
+    margin-left: 0;
+  }
+  ul.rig li {
+    width: 100% !important; /* over-ride all li styles */
+    /*margin: 0 0 20px;*/
+  }
+}
+
+
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 767px) {
