@@ -79,6 +79,7 @@ body {
   margin-right: 10px;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 .price {
   text-align: center;
