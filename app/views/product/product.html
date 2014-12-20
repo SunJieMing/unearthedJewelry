@@ -3,20 +3,30 @@
 	<div class="product-container">
 		<h1 class="product-title">{{individualItem.name}}</h1>
 		<h2 class="product-subtitle">{{individualItem.mainDescription}}</h2>
-		<section class="product-info">
+		<div class="product-info">
+
 			<div class="product-images">
 				<img class="product-image" ng-src="{{mainImageUrl}}"/>
-			
 			</div>
-			<!-- <div class="product-info"> -->
+
+			<div class="product-details">
+
+
 				<p>{{individualItem.productInfo}}</p>
+
+
 					<hr>
 						<ul class="product-specs">
 							<li ng-repeat="feature in individualItem.features">{{feature}}</li>
 						</ul>
 					<hr>
 
+
+
 				<h3 class="price">${{individualItem.price}}</h3>
+
+
+
 
 				<div ng-controller="PurchaseModalCtrl">
 				  <script type="text/ng-template" id="myModalContent.html">
@@ -39,8 +49,18 @@
 				  <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
 				</div>
 
-			<!-- </div> -->
-		</section>
+
+			</div><!--.product-info -->
+
+
+		</div>
+
+
+
+
+
+
+
 
 				<div class="thumbnails">
 					<ul>
