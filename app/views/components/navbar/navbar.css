@@ -55,3 +55,6 @@
 	left: 99%;
 	font-weight: 100;
 }
+.exit-icon:hover {
+	cursor: pointer;
+}
