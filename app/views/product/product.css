@@ -125,9 +125,38 @@ footer a{
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .product-info {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  .product-images {
+    margin: 0;
+    width: 100%;
+  }
+  .product-details {
+    width: 100%;
+    margin-top: 10%;
+    height: 70%;
+  }
+  .thumbnails {
+    margin-top: 0;
+  }
+  .product-container {
+    float: left;
+    height: 100%;
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .page-container {
+    float: left;
+  }
+}
 
-@media screen and (min-width: 768px) {
-  
+@media screen and (max-width: 480px) {
+  .product-container {
+    background-color: blue;
+  }
 }
 
 
