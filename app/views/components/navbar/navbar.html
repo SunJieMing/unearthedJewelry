@@ -21,21 +21,14 @@
   <div id="main-header-right" ng-controller="PurchaseModalCtrl">
 
     <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title">Im a modal!</h3>
-        </div>
-        <div class="modal-body">
-            <ul>
-                <li ng-repeat="item in items">
-                    <a ng-click="selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ selected.item }}</b>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-        </div>
+      <h2>So you want to buy this necklace? <i class="exit-icon fa fa-times" ng-click="ok()"></i> </h2>
+      <hr>
+      <p>What you need to do is call us, email us, or get on a google hangout with us.  Really just whatever you think would make it more likely for you to spend money on us.</p>
+      <br>
+      <p>Send a message to:</p>
+      <h3><span class="emphasis">something@something.com</span><br>
+        Include the product <span class="emphasis">NAME</span> and <span class="emphasis">ITEM NUMBER</span>.
+      </h3>
     </script>
 
     <h2 class="purchase-button" ng-click="open()">PURCHASE</h2> 
