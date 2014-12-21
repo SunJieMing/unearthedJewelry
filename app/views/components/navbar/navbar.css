@@ -59,3 +59,12 @@
 .exit-icon:hover {
 	cursor: pointer;
 }
+.collapsed-menu-purchase-btn:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 545px) {
+	.modal-content {
+		height: 375px;
+	}
+}
