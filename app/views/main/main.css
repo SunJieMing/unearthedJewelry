@@ -681,6 +681,9 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   }
 }
 @media screen and (max-width: 480px) {
+  #main-header-left {
+    margin-left: 5%;
+  }
   #main-header-center li {
     text-decoration: none;
     margin-top: 17px;
