@@ -1,50 +1,90 @@
-<head>
- <script src="views/category/hover.js"></script>
-</head>
+
 
 <div ng-include="'views/components/navbar/navbar.html'"></div>
 
 <!-- Top Image Here -->
 <div class="category-top-image">
-  <img clsas="top-image" ng-src="{{imageUrl}}"/>
+  <img class="top-image" ng-src="{{imageUrl}}"/>
 </div>
-<div class="category-container">
-  <div class="category-description">
-    <h1>
-      {{title}}
-    </h1>
-    <p>
-      {{mainCopy}}
-    </p> 
-    <hr/>
+<!-- <div class="category-container"> -->
+<div class="category-description">
+  <h1>
+    {{title}}
+  </h1>
+  <p>
+    {{mainCopy}}
+  </p> 
+  <hr/>
+</div>
+<!-- End Top Image -->
 
 
 
+<!-- Demo Code -->
+
+<div class="wrapper">
+  <div class="container">
+    <div id="three-columns" class="grid-container">
+      <ul class="rig columns-3">
 
 
+        <li ng-repeat="product in categoryList.results">
+        <script> console.log(categoryList.results); </script>
+          <div class="category-image" ng-mouseenter="showCover=!product.sold" ng-mouseleave="showCover=false">
+            <img ng-src="{{product.mainImage.url}}" />
+              <div class="image-sold" ng-show="product.sold"> 
+                <h1>Sold</h1>
+              </div>
+              <div class="cover image-hover" ng-show="showCover">
+                <h2>
+                  <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">
+                    {{product.name}}
+                  </a>
+               </h2>
+                <p> 
+                  {{product.mainDescription}}
+                </p> 
+            </div> 
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+    <!--/#three-columns-->
   </div>
-  <div class="image-container" ng-repeat="product in categoryList.results">
+  <!--/.container-->
+</div>
+<!--/.wrapper-->
+
+<!-- End Demo Code -->
+
+
+
+<!-- Product Grid Code -->
+ <!--  <div class="image-container" ng-repeat="product in categoryList.results">
     <div class="category-image" ng-mouseenter="showCover=!product.sold" ng-mouseleave="showCover=false">
-    <ul class="rig columns-3">
-      <li>
-        <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
-        <div class="image-sold" ng-show="product.sold"> 
-        <h1>Sold</h1>
-        </div>
-        <div class="cover image-hover" ng-show="showCover">
-          <h2>
-            <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">{{product.name}}</a>
-          </h2>
-          <p> 
-            {{product.mainDescription}}
-          </p> 
-        </div> 
-      </li>
-    </ul>
+      <ul class="rig columns-3">
+        <li>
+          <img class="category-item-image" ng-src="{{product.mainImage.url}}" />
+          <div class="image-sold" ng-show="product.sold"> 
+            <h1>Sold</h1>
+          </div>
+          <div class="cover image-hover" ng-show="showCover">
+            <h2>
+              <a class="product-cover-name" ui-sref="product({category: product.category, id: product.objectId})">
+                {{product.name}}
+              </a>
+            </h2>
+            <p> 
+              {{product.mainDescription}}
+            </p> 
+          </div> 
+        </li>
+      </ul>
     </div>
   </div> 
-</div>
-<!-- End Carousel begin Lower Rows -->
+</div> -->
+<!-- End Product Grid Code -->
 
-<!-- End Lower Rows, Begin Footer -->
 <div ng-include="'views/components/footer/footer.html'"></div>

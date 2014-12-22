@@ -337,6 +337,7 @@ footer {
   background-color: white;
   width: 100%;
   float:right;
+  border-top: 1px solid #CCC;
 }
 /* Custom page footer */
 footer h1 {
