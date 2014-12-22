@@ -1,0 +1,70 @@
+.modal-open .modal {
+	background-color: rgba(20, 20, 20, .35);
+}
+
+.modal-content {
+	border: solid 3px;
+	border-radius: 0;
+	margin-top: 20%;
+	height: 300px;
+	background: rgba(24, 24, 24, .95);
+}
+
+.modal-content h2 {
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+
+.modal-content hr {
+	width: 95%;
+}
+
+.modal-content p {
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.modal-content h3 {
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.emphasis {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.exit-icon {
+	top: -5%;
+	position: absolute;
+	left: 99%;
+	font-weight: 100;
+}
+.exit-icon:hover {
+	cursor: pointer;
+}
+.collapsed-menu-purchase-btn:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 545px) {
+	.modal-content {
+		height: 375px;
+	}
+}

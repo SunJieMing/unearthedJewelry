@@ -15,5 +15,6 @@ angular
   $urlRouterProvider
   .otherwise('/');
 
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
+  //This line removes the '#' from the url but it also makes it so we can't refresh the state.
 }]);

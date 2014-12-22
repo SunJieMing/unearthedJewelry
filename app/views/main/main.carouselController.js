@@ -7,7 +7,6 @@ angular.module('unearthedApp').controller('CarouselCtrl', function ($scope, Main
   var slides = $scope.slides = [];
 
   MainFactory.getCarouselData().then(function(data){
-    console.log(data);
     $scope.slides = data.results;
   });
 

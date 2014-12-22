@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('unearthedApp')
 .config(function($stateProvider) {
   $stateProvider
