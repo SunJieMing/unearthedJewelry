@@ -21,6 +21,9 @@ p {
   height: 60px;
 
 }
+.about-link:hover {
+  cursor: pointer;
+}
 nav h1 {
   margin-top: 14px;
   font-size: 30px;
@@ -234,7 +237,7 @@ The elegant design of these bracelets is unmatched this side of India. The elega
 }
 .row-two-right {
   position: relative;
-  height: auto;
+  height: 100%;
   width: 40%;
   display: inline-block;
   margin: 0;
@@ -678,6 +681,9 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   }
 }
 @media screen and (max-width: 480px) {
+  #main-header-left {
+    margin-left: 5%;
+  }
   #main-header-center li {
     text-decoration: none;
     margin-top: 17px;
@@ -692,7 +698,9 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   #main-carousel1 {
     height: 200px;
   }
-  
+  .main-info-box1 {
+    display: none;
+  }
 
 }
 

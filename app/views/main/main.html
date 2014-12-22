@@ -9,7 +9,7 @@
       <slide ng-repeat="slide in slides" active="slide.active">
         <img class="main-image" src="images/homepage.png">
         <div class="main-info-box1">
-          <h1>{{slide.carouselTitle}}</h1>
+          <h1><span ui-sref="about" class="about-link">{{slide.carouselTitle}}</span></h1>
           <hr>
           <p>{{slide.carouselText}}</p>
         </div>
@@ -21,7 +21,7 @@
   <div class="row-one-left">
     <div class="text-div1">
     <h1>
-      HISTORY
+      <span ui-sref="about" class="about-link">HISTORY</span>
     </h1>
     <p>
       {{history}}
@@ -40,7 +40,7 @@
     --><div class="row-two-right">
     <div class="text-div2">
     <h1>
-      QUALITY
+      <span ui-sref="about" class="about-link">QUALITY</span>
     </h1>
     <p>
       {{quality}}

@@ -15,8 +15,8 @@ body {
 .image-sold h1 {
   font-family: sans-serif;
   position: absolute;
-  top: 50%;
-  left: 14%;
+  top: 48%;
+  left: 25%;
   transform: translateY(-50%);
   margin: auto 0;
   color: white;
