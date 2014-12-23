@@ -97,6 +97,7 @@ body {
 }
 .page-container {
   background-image: url('/images/aboutBackground.jpeg');
+  background-size: cover;
 }
 
 
