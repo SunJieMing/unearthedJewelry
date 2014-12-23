@@ -15,6 +15,10 @@ p {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
 }
+.ovh {
+  /*This prevents the page from scrolling when purchase modal is open.*/
+  overflow:hidden;
+}
 .navbar {
   background-color: rgba(0,0,0,.6);
   border: none;
