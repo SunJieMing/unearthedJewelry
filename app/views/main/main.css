@@ -437,6 +437,10 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 @media screen and (max-width: 767px) {
   
+  .navbar-nav {
+    margin: 7.5px -10px;
+  }
+
   .main-info-box1 {
   /*This hides the carousel text box */
     display: none;
