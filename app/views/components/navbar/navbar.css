@@ -63,6 +63,11 @@
 	cursor: pointer;
 }
 
+
+.navbar-collapse ul li a {
+	margin-left: 10px;
+}
+
 @media screen and (max-width: 545px) {
 	.modal-content {
 		height: 375px;
