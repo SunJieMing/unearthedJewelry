@@ -594,10 +594,10 @@ nav.navbar.navbar-inverse.navbar-static-top {
   display: none;
 }
 
-div#main-footer-center {
+/*div#main-footer-center {
   margin-left: 20%;
   width: 60%;
-  display: inline-block;
+  display: inline-block;*/
   
 }
 #main-footer-center ul {
@@ -675,11 +675,8 @@ div#main-footer-center {
   text-align: center;
 }
 
-The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India. The elegant design of these bracelets is unmatched this side of India.
 
 
-
-}
 @media screen and (max-width: 640px) {
   #main-header-center li {
     text-decoration: none;
@@ -695,7 +692,6 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   #main-carousel1 {
     height: 300px;
   }
-<<<<<<< HEAD
   div #main-footer-center{
     width: 100%;
   }
@@ -703,11 +699,8 @@ The elegant design of these bracelets is unmatched this side of India. The elega
     margin: auto;
     margin-bottom: 10px;
   }
-=======
->>>>>>> 29a2d72c121b71926e345b5f29c13e68fb79a4bd
   #main-footer-left {
     display: none;
-    
   }
   #main-footer-right {
     display: none;
