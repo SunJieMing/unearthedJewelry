@@ -4,12 +4,14 @@ angular.module('unearthedApp')
   $scope.test = 'Hello World!';
 });
 
-angular.module('unearthedApp').controller('PurchaseModalCtrl', function ($scope, $modal, $log) {
+angular.module('unearthedApp').controller('PurchaseModalCtrl', function ($scope, $modal, $log, $document) {
 
   $scope.items = ['item1', 'item2', 'item3'];
+  var bodyRef = angular.element( $document[0].body );
 
   $scope.open = function (size) {
 
+    bodyRef.addClass('ovh'); //This prevents scrolling when the modal is active.
     var modalInstance = $modal.open({
       templateUrl: 'myModalContent.html',
       controller: 'ModalInstanceCtrl',
@@ -22,6 +24,8 @@ angular.module('unearthedApp').controller('PurchaseModalCtrl', function ($scope,
     });
 
     modalInstance.result.then(function (selectedItem) {
+
+      bodyRef.removeClass('ovh');
       $scope.selected = selectedItem;
     }, function () {
       $log.info('Modal dismissed at: ' + new Date());

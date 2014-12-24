@@ -15,6 +15,10 @@ p {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
 }
+.ovh {
+  /*This prevents the page from scrolling when purchase modal is open.*/
+  overflow:hidden;
+}
 .navbar {
   background-color: rgba(0,0,0,.6);
   border: none;
@@ -437,6 +441,15 @@ nav.navbar.navbar-inverse.navbar-static-top {
   }
 }
 @media screen and (max-width: 767px) {
+  
+  .navbar-nav {
+    margin: 7.5px -10px;
+  }
+
+  .main-info-box1 {
+  /*This hides the carousel text box */
+    display: none;
+  }
 
   .carousel-inner > .item > img {
   margin-top: 60px;
@@ -570,6 +583,7 @@ nav.navbar.navbar-inverse.navbar-static-top {
 }
 
 div#main-footer-center {
+  margin-left: 20%;
   width: 60%;
   display: inline-block;
   
@@ -668,9 +682,6 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   }
   #main-carousel1 {
     height: 300px;
-  }
-  #main-footer-center ul {
-    margin: auto 0;
   }
   #main-footer-left {
     display: none;
