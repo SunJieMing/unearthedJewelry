@@ -97,6 +97,7 @@ body {
 }
 .page-container {
   background-image: url('/images/aboutBackground.jpeg');
+  background-size: cover;
 }
 
 
@@ -163,12 +164,19 @@ footer a{
     padding: 0;
   }
   .product-details {
+    position: relative;
+    top: 310px;
     padding-right: 3%;
     padding-left: 3%;
   }
   .thumbnails {
+    position: relative;
+    top: -310px;
     margin-top: 30px;
     margin-bottom: 0;
+  }
+  .thumbnails ul {
+    margin-top: 0;
   }
   .thumbnails li {
     margin-left: 13%;
@@ -182,14 +190,3 @@ footer a{
     margin-top: 10%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -31,7 +31,7 @@
         <li ng-repeat="product in categoryList.results">
         <script> console.log(categoryList.results); </script>
           <div class="category-image" ng-mouseenter="showCover=!product.sold" ng-mouseleave="showCover=false">
-            <img ng-src="{{product.mainImage.url}}" />
+            <img ng-src="{{product.mainImage.url}}" ui-sref="product({category: product.category, id: product.objectId})"/>
               <div class="image-sold" ng-show="product.sold"> 
                 <h1>Sold</h1>
               </div>
