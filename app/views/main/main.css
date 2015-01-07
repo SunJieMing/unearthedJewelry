@@ -216,6 +216,7 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   height: 100%;
   width: 60%;
   background-image: url('/images/toprow.png');
+  background-size: cover;
   padding: 0px;
   margin-top: 0;
 }
@@ -242,6 +243,8 @@ The elegant design of these bracelets is unmatched this side of India. The elega
 
     width: auto;
     max-width: 100%;
+    background-image: url('/images/bellfinal.png');
+    background-size: cover;
 }
 .row-two-center {
   height: 100%;
@@ -250,6 +253,7 @@ The elegant design of these bracelets is unmatched this side of India. The elega
   margin: 0;
   padding: 0;
   background-image: url('/images/handfinal.png');
+  background-size: cover;
 }
 .row-two-right {
   position: relative;
@@ -572,6 +576,7 @@ nav.navbar.navbar-inverse.navbar-static-top {
   margin: 0;
   padding: 0;
   background-image: url('/images/handfinal.png');
+  background-size: cover;
 }
 .main-row-two {
   height: 350px;
@@ -580,6 +585,7 @@ nav.navbar.navbar-inverse.navbar-static-top {
   margin: 0;
   padding: 0;
   background-image: url('/images/bellfinal.png');
+  background-size: cover;
 }
 .row-two-left {
   display: none;
